@@ -98,9 +98,17 @@
     .hero {
         max-width: 768px;
         background-image:var(--hero-gadient-color), 
-        url(../images/hero-tablet-min.jpg);
+        url(../images/tab-hero-min.jpg);
         padding-top: 121px;
         padding-bottom: 121px;        
+    }
+@media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+    .hero {
+        background-image: var(--hero-gadient-color), 
+        url(../images/tab-hero-2x-min.jpg);}
     }
     .header-hero {
         max-width: 496px;
@@ -194,10 +202,18 @@
         /*---hero---*/
     .hero {
         background-image:var(--hero-gadient-color), 
-        url(../images/people-office\ 1-min.jpg);
+        url(../images/desk-hero-min.jpg);
         max-width: 1440px;
         padding-top: 188px;
         padding-bottom: 188px;
+    }
+@media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+    .hero {
+        background-image: var(--hero-gadient-color), 
+        url(../images/desk-hero-2x-min.jpg);}
     }    
     .header-hero {
         margin-bottom: 48px;
