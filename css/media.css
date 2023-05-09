@@ -3,17 +3,23 @@
     .container {
         width: 428px;
     }
+
         /*---header---*/
+
         .mob-soc-list {
             gap: 56px;
         }
+
         /*---hero---*/
         /*---Our Team---*/
+
         .team > .container {
             width: 296px;
         }
+
         /*---customers---*/
         /*---footer---*/
+
     .footer-container {
         margin-left: auto;
         margin-right: auto;
@@ -32,14 +38,16 @@
         padding-top: 96px;
         padding-bottom: 96px;
     }
+
         /*---header---*/
+
     .current::after {
         content: '';
         position: absolute;
         width: 100%;
         height: 4px;
         left: 0px;
-        top: 55px;
+        top: 50px;
         background: #404BBF;
         border-radius: 2px;
     }
@@ -57,7 +65,7 @@
     .header-contacts {
         justify-content: end;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         row-gap: 12px;
     }
     .header-item {
@@ -78,14 +86,13 @@
     }
     
     .header-address {
-        display: flex;
         font-style: normal;
     }
     .contacts {
         font-family: 'Roboto';
         font-style: normal;
-        font-size: 16px;
-        line-height: 1.50em;
+        font-size: 12px;
+        line-height: 1.17em;
         letter-spacing: 0.02em;
         color:var(--contacs-color);
         transition: color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
@@ -94,7 +101,9 @@
     .contacts:is(:hover, :focus) {
         color:var(--contacs-hover-color);
     }
+
         /*---hero---*/
+
     .hero {
         max-width: 768px;
         background-image:var(--hero-gadient-color), 
@@ -119,10 +128,18 @@
         margin-right: auto;
         margin-bottom: 36px;           
         }
+
+        /*---feature---*/
+
+    .feature-subtitle {
+        text-align: left;
+    }
     .feature-list {
         width: calc((100% - 24px) / 2);
     }
+
         /*---Our Team---*/
+
     .team > .container {
         width: 582px;
     }
@@ -130,7 +147,9 @@
         row-gap: 64px;
         column-gap: 24px;
     }
+
         /*---customers---*/
+
     .customers > .container {
         width: 582px;
     }
@@ -140,7 +159,9 @@
     .customers-item {
         flex-basis: calc((100% - 48px) / 3);
     }
+
         /*---footer---*/
+
     .footer > .container {
         width: 582px;
     }
@@ -160,10 +181,10 @@
         margin: 0;
     }
     .footer-soc-title {
-        justify-content: start;
+        text-align: left;
     }
     .footer-modal-title {
-        margin: 0;
+        text-align: left;
     }
     .footer-form {
         flex-wrap: nowrap;
@@ -179,6 +200,7 @@
     }
 }
 /*----------desktop---------*/
+
 @media screen and (min-width: 1158px) {
     .container {
         width: 1158px;
@@ -187,11 +209,21 @@
         padding-top: 120px;
         padding-bottom: 120px;
     }
+
         /*---header---*/
+
     .current::after {
         top: 45px;
     }
+    .contacts {
+        font-size: 16px;
+        line-height: 1.50em;
+    }
+    .header-address {
+    }
     .header-contacts {
+        margin-left: auto;
+        flex-direction: row;
         align-items: center;
         gap: 40px;
     }
@@ -199,7 +231,9 @@
         padding-top: 24px;
         padding-bottom: 24px;
     }
+
         /*---hero---*/
+
     .hero {
         background-image:var(--hero-gadient-color), 
         url(../images/desk-hero-min.jpg);
@@ -216,11 +250,10 @@
         url(../images/desk-hero-2x-min.jpg);}
     }    
     .header-hero {
-        margin-bottom: 48px;
-
-            
+        margin-bottom: 48px;    
     }    
         /*---feature---*/
+
     .feature {
         flex-wrap: nowrap;
         gap: 24px;
@@ -241,11 +274,15 @@
         margin-top: 8px;
         font-weight: 500;
     }
+
         /*---list of works---*/
+
     .works {
-        display: flex;
+        display: block;
     }
+
         /*---Our Team---*/
+
     .team > .container {
         width: 1158px;
     }
@@ -254,7 +291,9 @@
         gap: 24px;
             
     }
+
         /*---customers---*/
+
     .customers > .container {
         width: 1158px;
     }
@@ -266,7 +305,9 @@
         height: 88px;
         flex-basis: calc((100% - 120px) / 6);
     }
+
         /*---footer---*/
+        
     .footer > .container {
         width: 1158px;
     }
